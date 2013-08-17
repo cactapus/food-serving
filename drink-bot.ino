@@ -50,7 +50,12 @@ void setup()
     d1Val= digitalRead (d1Pin);
     d2Val= digitalRead (d2Pin);
     d3Val= digitalRead (d3Pin);
-    if (d0Val == 1)
+    if (d3Val == 1 && d2Val == 1)
+    {
+      tone (9,100,1000);
+      delay (1000);
+    }
+    else if (d0Val == 1)
     {
       Serial.println("4");
       Forward(0.5);
