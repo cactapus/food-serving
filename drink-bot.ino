@@ -41,7 +41,7 @@ void setup()
   Serial.begin (9600);
   LeftWheel.attach( LWPin );  //  Connects LeftWheel to the pin LWPin
   RightWheel.attach( RWPin );  // Connects another wheel to be controlled by the pin RWPin
-
+  pinMode(9,OUTPUT);
 
 }
   void loop()
